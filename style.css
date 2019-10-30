@@ -1,0 +1,129 @@
+body{
+ padding: 0px;
+ margin: 0px;
+ font-family: 'Arial, sans-serif';
+}
+*{
+ box-sizing: border-box;
+}
+.titre{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    height: 50px;
+}
+.titre h4{
+    color: #fff;
+    text-align: center;
+    font-size: 1.1vw;
+    padding: 10px;
+}
+.head{
+    width: 100%;
+    background: url("wedding.jpg");
+    height: 250px;
+   padding: 60px;
+    text-align: center;
+}
+.head h1{
+  color: rgb(245, 241, 242);
+  font-size: 2.1vw;
+  background-color: rgb(245, 81, 81);
+ 
+}
+.head p{
+    color: rgb(245, 241, 242);
+    font-size: 2.0vw;
+    background-color: rgb(241, 77, 77);
+ 
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(40, 40, 40); 
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.7vw;
+}
+nav a.active{
+    background-color: rgb(235, 141, 27);
+    color: rgb(40, 40, 40);
+}
+nav a:hover:not .active{
+    background-color: bisque;
+    color: rgb(40, 40, 40);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.row aside{
+    width: 30%;
+    background-color: rgb(194, 194, 194);
+    padding: 10px;
+
+}
+aside h1{
+    font-size: 2.3vw;
+    color: #fff;
+  }
+aside p{
+      font-size: 2.2;
+  }
+aside .falls{
+    margin: 5px;
+}
+.row main{
+    width: 70%;
+    padding: 10px;
+}
+main h1{
+  font-size: 2.3vw;
+}
+main p{
+    font-size: 2.2;
+}
+footer{
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 5px;
+}
+footer h1{
+    font-size: 1.9vw;
+    color: rgb(245, 45, 45);
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .row aside{
+        width: 100%;
+        background-color: rgb(194, 192, 192);
+    }
+    aside h1{
+        font-size: 2.5vw;
+    }
+    aside p{
+        font-size: 2.5vw;
+    }
+    .row main{
+       width: 100%;
+    }
+     
+   
+}
